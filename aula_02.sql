@@ -40,7 +40,7 @@ SELECT * FROM tb_produtos WHERE id != 4; -- serve para mostrar somente o produto
 
 
 -- SERVE PARA ALTERAR MODOFICAR A ESTRUTURA DE UM ATRIBITUTO, modify serve para modificar 
-ALTER TABLE tb_produtos MODIFY preco decimal(6,2);
+ALTER TABLE tb_produtos MODIFY preco decimal(6,2); 
 
 -- UPDATE mexe no dado SET IDENTICA O QUE VAI FAZER A ALTERAÇÃO, where significa estabelecer a condição, só alterar o do abatae poe exemplo
 UPDATE tb_produtos SET preco = 15.90 WHERE id = 1;
@@ -54,5 +54,7 @@ ALTER TABLE tb_produtos ADD descricao varchar (255); -- o add significa adiciona
 ALTER TABLE tb_produtos CHANGE descricao description varchar(255); -- change modifica o nome do atributo
 
 ALTER TABLE tb_produtos DROP description; -- DROP serve para apagar o atributo
+
+
 
 
